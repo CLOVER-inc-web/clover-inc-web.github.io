@@ -1,132 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>CLOVER Co., Ltd. | 株式会社クローバー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      background: #f7f7f7;
+      background: #f4f6f5;
       color: #333;
-      line-height: 1.7;
     }
     header {
       background: #0b3d2e;
       color: #fff;
-      padding: 20px 40px;
+      padding: 40px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 26px;
+    nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 600;
     }
-    nav {
-      margin-top: 10px;
-    }
-    nav button {
-      background: #fff;
-      color: #0b3d2e;
-      border: none;
-      padding: 6px 12px;
-      margin-right: 8px;
-      cursor: pointer;
-      border-radius: 4px;
-      font-weight: bold;
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
-      padding: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
       background: #fff;
-      margin: 20px auto;
-      max-width: 900px;
+      padding: 40px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    h2 {
-      border-left: 6px solid #0b3d2e;
-      padding-left: 10px;
     }
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       color: #777;
     }
-    .en {
-      display: none;
-    }
   </style>
-  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('.ja').forEach(el => {
-        el.style.display = (lang === 'ja') ? 'block' : 'none';
-      });
-      document.querySelectorAll('.en').forEach(el => {
-        el.style.display = (lang === 'en') ? 'block' : 'none';
-      });
-    }
-  </script>
 </head>
+
 <body>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">Company</a>
-  <a href="business.html">Business</a>
-  <a href="contact.html">Contact</a>
-</nav>
+
 <header>
-  <h1>株式会社クローバー / CLOVER Co., Ltd.</h1>
+  <h1>CLOVER Co., Ltd.</h1>
+  <p>株式会社クローバー</p>
   <nav>
-    <button onclick="switchLang('ja')">日本語</button>
-    <button onclick="switchLang('en')">English</button>
+    <a href="index.html">Home</a>
+    <a href="company.html">Company</a>
+    <a href="business.html">Business</a>
   </nav>
 </header>
 
 <section>
-  <h2>Company Philosophy</h2>
-  <p class="ja">
-    株式会社クローバーは、国内外の企業をつなぐ実務的なパートナーとして、
-    誠実さと柔軟性を重視した事業活動を行っています。
-    一件一件の取引に責任を持ち、長期的な信頼関係の構築を最優先に考えています。
-  </p>
-  <p class="en">
-    CLOVER Co., Ltd. operates as a practical and reliable partner connecting
-    businesses in Japan and overseas.
-    We prioritize integrity, flexibility, and long-term trust in every transaction.
-  </p>
-</section>
-
-<section>
-  <h2>Business Overview</h2>
-  <p class="ja">
-    当社は、海外企業との取引支援、貿易関連業務、ならびに
-    事業立ち上げ段階における実務サポートを主な業務としています。
-    小規模ならではの機動力を活かし、実務目線での対応を行います。
-  </p>
-  <p class="en">
-    Our core services include support for transactions with overseas partners,
-    trade-related operations, and hands-on assistance during the early stages
-    of business development.
-    We provide flexible and practical solutions tailored to each client.
-  </p>
-</section>
-
-<section>
-  <h2>Company Information</h2>
-  <p class="ja">
-    <strong>会社名：</strong>株式会社クローバー<br>
-    <strong>代表取締役社長：</strong>伊與田 房輝（イヨタ フサキ）<br>
-    <strong>所在地：</strong>〒358-0024 埼玉県入間市久保稲荷4-21-16
-  </p>
-  <p class="en">
-    <strong>Company Name:</strong> CLOVER Co., Ltd.<br>
-    <strong>Representative Director & CEO:</strong> Fusaki Iyota<br>
-    <strong>Address:</strong> 4-21-16 Kuboinari, Iruma-shi, Saitama 358-0024, Japan
+  <h2>信頼をつなぐ、ビジネスパートナー</h2>
+  <p>
+    株式会社クローバーは、日本と海外を結ぶビジネスサポートを行っています。  
+    貿易事務、営業支援、業務委託を中心に、柔軟かつ実務重視の対応を強みとしています。
   </p>
 </section>
 
 <footer>
-  © CLOVER Co., Ltd. All Rights Reserved.
+  © CLOVER Co., Ltd.
 </footer>
 
 </body>
