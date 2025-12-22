@@ -4,58 +4,99 @@
   <meta charset="UTF-8">
   <title>CLOVER Co., Ltd. | 株式会社クローバー</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      font-family: "Inter", sans-serif;
-      background: #f5f7f8;
-      color: #222;
+      background: #f4f6f5;
+      color: #333;
+      line-height: 1.7;
     }
+
     header {
-      background: #0c2f3a;
+      background: #0b3d2e;
       color: #fff;
-      padding: 50px 40px;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     header h1 {
-      font-family: "Noto Serif JP", serif;
-      font-size: 32px;
       margin: 0;
+      font-size: 22px;
+      letter-spacing: 1px;
     }
-    nav {
-      margin-top: 20px;
-    }
+
     nav a {
       color: #fff;
-      margin-right: 25px;
+      margin-left: 20px;
       text-decoration: none;
-      font-weight: 500;
-      letter-spacing: 0.5px;
+      font-weight: 600;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    .lang {
-      float: right;
+
+    .hero {
+      background: #e9efec;
+      padding: 90px 40px;
+      text-align: center;
     }
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      background: #fff;
-      padding: 60px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
-    section h2 {
-      font-family: "Noto Serif JP", serif;
-      font-size: 26px;
+
+    .hero h2 {
+      font-size: 32px;
+      color: #0b3d2e;
       margin-bottom: 20px;
     }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .section-box {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 60px 40px;
+      border-radius: 10px;
+    }
+
+    .section-box h2 {
+      color: #0b3d2e;
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+
+    .three {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .three h3 {
+      color: #0b3d2e;
+      margin-bottom: 10px;
+    }
+
     footer {
+      background: #0b3d2e;
+      color: #fff;
       text-align: center;
       padding: 30px;
-      color: #666;
       font-size: 14px;
+    }
+
+    a {
+      color: #0b3d2e;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -63,11 +104,7 @@
 <body>
 
 <header>
-  <div class="lang">
-    <a href="en/index.html">EN</a>
-  </div>
   <h1>CLOVER Co., Ltd.</h1>
-  <p>株式会社クローバー</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="company.html">Company</a>
@@ -75,17 +112,61 @@
   </nav>
 </header>
 
-<section>
-  <h2>日本と世界をつなぐ、実務型ビジネスパートナー</h2>
+<section class="hero">
+  <h2>Connecting Japan and Global Business</h2>
   <p>
-    株式会社クローバーは、日本企業と海外企業を結ぶ実務支援を行っています。<br>
-    貿易事務、営業支援、業務委託を中心に、現場感覚を重視した柔軟な対応を強みとしています。
+    株式会社クローバーは、日本と海外を結ぶ<br>
+    実務重視のビジネスサポートを提供しています。
   </p>
 </section>
 
+<section>
+  <div class="section-box">
+    <h2>Business</h2>
+    <div class="three">
+      <div>
+        <h3>Trade Support</h3>
+        <p>中国・東南アジア向け貿易事務、輸出入サポート</p>
+      </div>
+      <div>
+        <h3>Sales Assistance</h3>
+        <p>海外営業支援、顧客対応、交渉補助</p>
+      </div>
+      <div>
+        <h3>Business Outsourcing</h3>
+        <p>実務ベースの業務委託・バックオフィス支援</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-box">
+    <h2>Company</h2>
+    <p>
+      会社名：株式会社クローバー<br>
+      代表取締役社長：伊與田 房輝<br>
+      所在地：埼玉県入間市久保稲荷4-21-16
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="section-box">
+    <h2>Contact</h2>
+    <p>
+      Email：
+      <a href="mailto:info@clover.co.jp">info@clover.co.jp</a>
+    </p>
+    <p>
+      Tel：
+      <a href="tel:09000000000">090-0000-0000</a>
+    </p>
+  </div>
+</section>
+
 <footer>
-  © CLOVER Co., Ltd.<br>
-  株式会社クローバー｜代表取締役社長 伊與田 房輝
+  © CLOVER Co., Ltd.
 </footer>
 
 </body>
