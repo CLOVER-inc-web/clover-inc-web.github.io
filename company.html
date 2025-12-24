@@ -3,69 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>Company | CLOVER Co., Ltd.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="site-header">
   <div class="header-inner">
-    <div class="logo-area">
-      <img src="logo.png" alt="CLOVER logo">
-      <div class="logo-text">
-        CLOVER Co., Ltd.
-        <span>株式会社クローバー</span>
-      </div>
+    <div class="logo-text">
+      <span class="en">CLOVER Co., Ltd.</span>
+      <span class="jp">株式会社クローバー</span>
     </div>
-    <nav>
+    <nav class="global-nav">
       <a href="index.html">Home</a>
-      <a href="company.html">Company</a>
+      <a href="company.html" class="active">Company</a>
       <a href="business.html">Business</a>
+      <a href="en.html">EN</a>
     </nav>
   </div>
 </header>
 
-<div class="page-hero">
-  <h1>Company</h1>
-  <p>会社概要</p>
-</div>
+<main class="page">
 
-<section>
+<section class="page-hero">
+  <h1>Company Profile</h1>
+  <p>企業としての信頼と歩み</p>
+</section>
+
+<section class="content">
   <h2>会社概要</h2>
-  <table class="table">
+  <table class="profile-table">
     <tr>
       <th>会社名</th>
-      <td>株式会社クローバー（CLOVER Co., Ltd.）</td>
+      <td>株式会社クローバー</td>
     </tr>
     <tr>
-      <th>所在地</th>
-      <td>〒358-0024 埼玉県入間市久保稲荷4-21-16</td>
+      <th>英文社名</th>
+      <td>CLOVER Co., Ltd.</td>
+    </tr>
+    <tr>
+      <th>代表取締役社長</th>
+      <td>伊與田 房輝</td>
+    </tr>
+    <tr>
+      <th>取締役</th>
+      <td>伊與田 育大</td>
     </tr>
     <tr>
       <th>事業内容</th>
       <td>貿易事務支援、営業支援、業務委託</td>
     </tr>
-    <tr>
-      <th>設立</th>
-      <td>（記載予定）</td>
-    </tr>
   </table>
 </section>
 
-<section>
+<section class="content bg-light">
   <h2>企業理念</h2>
   <p>
-    私たちは、日本と海外を結ぶビジネスの現場において、
-    信頼を何よりも重視し、実務に根ざしたサポートを提供します。
-  </p>
-  <p>
-    表に出ない業務こそ、正確さと誠実さが求められる。
-    その信念のもと、長期的なパートナーシップを築いてまいります。
+    私たちは、目先の利益ではなく、<br>
+    長期的な信頼関係を最も重要な価値と考えています。<br><br>
+    日本と海外をつなぐ実務の現場において、<br>
+    誠実さと確実性をもって、お客様の事業を支えます。
   </p>
 </section>
 
-<footer>
-  © CLOVER Co., Ltd.
+<section class="content">
+  <h2>沿革</h2>
+  <ul class="history">
+    <li><span>202X年</span> 株式会社クローバー 設立</li>
+    <li><span>202X年</span> 海外取引支援業務を開始</li>
+    <li><span>202X年</span> 貿易・業務委託分野を拡大</li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© CLOVER Co., Ltd.</p>
 </footer>
 
 </body>
